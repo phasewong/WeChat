@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PWTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     // 设置窗口的根控制器
-    UITabBarController *VC = [[UITabBarController alloc]init];
+    PWTabBarController *VC = [[PWTabBarController alloc]init];
     VC.view.backgroundColor = [UIColor redColor];
     self.window.rootViewController = VC;
     

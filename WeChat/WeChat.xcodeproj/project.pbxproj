@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		A68B36301BEE48ED0055CADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B362F1BEE48ED0055CADD /* main.m */; };
 		A68B36331BEE48ED0055CADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B36321BEE48ED0055CADD /* AppDelegate.m */; };
-		A68B36361BEE48ED0055CADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B36351BEE48ED0055CADD /* ViewController.m */; };
-		A68B36391BEE48ED0055CADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B36371BEE48ED0055CADD /* Main.storyboard */; };
 		A68B363B1BEE48ED0055CADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68B363A1BEE48ED0055CADD /* Assets.xcassets */; };
-		A68B363E1BEE48ED0055CADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B363C1BEE48ED0055CADD /* LaunchScreen.storyboard */; };
 		A68B36491BEE48ED0055CADD /* WeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B36481BEE48ED0055CADD /* WeChatTests.m */; };
 		A68B36541BEE48ED0055CADD /* WeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B36531BEE48ED0055CADD /* WeChatUITests.m */; };
 /* End PBXBuildFile section */
@@ -39,11 +36,7 @@
 		A68B362F1BEE48ED0055CADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A68B36311BEE48ED0055CADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A68B36321BEE48ED0055CADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A68B36341BEE48ED0055CADD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A68B36351BEE48ED0055CADD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A68B36381BEE48ED0055CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A68B363A1BEE48ED0055CADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A68B363D1BEE48ED0055CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68B363F1BEE48ED0055CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68B36441BEE48ED0055CADD /* WeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B36481BEE48ED0055CADD /* WeChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatTests.m; sourceTree = "<group>"; };
@@ -103,11 +96,7 @@
 			children = (
 				A68B36311BEE48ED0055CADD /* AppDelegate.h */,
 				A68B36321BEE48ED0055CADD /* AppDelegate.m */,
-				A68B36341BEE48ED0055CADD /* ViewController.h */,
-				A68B36351BEE48ED0055CADD /* ViewController.m */,
-				A68B36371BEE48ED0055CADD /* Main.storyboard */,
 				A68B363A1BEE48ED0055CADD /* Assets.xcassets */,
-				A68B363C1BEE48ED0055CADD /* LaunchScreen.storyboard */,
 				A68B363F1BEE48ED0055CADD /* Info.plist */,
 				A68B362E1BEE48ED0055CADD /* Supporting Files */,
 			);
@@ -243,9 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68B363E1BEE48ED0055CADD /* LaunchScreen.storyboard in Resources */,
 				A68B363B1BEE48ED0055CADD /* Assets.xcassets in Resources */,
-				A68B36391BEE48ED0055CADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68B36361BEE48ED0055CADD /* ViewController.m in Sources */,
 				A68B36331BEE48ED0055CADD /* AppDelegate.m in Sources */,
 				A68B36301BEE48ED0055CADD /* main.m in Sources */,
 			);
@@ -306,25 +292,6 @@
 			targetProxy = A68B36501BEE48ED0055CADD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A68B36371BEE48ED0055CADD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A68B36381BEE48ED0055CADD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A68B363C1BEE48ED0055CADD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A68B363D1BEE48ED0055CADD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A68B36561BEE48ED0055CADD /* Debug */ = {
@@ -413,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = WeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HZNU.WeChat;
@@ -424,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = WeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HZNU.WeChat;
@@ -498,6 +467,7 @@
 				A68B365A1BEE48ED0055CADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68B365B1BEE48ED0055CADD /* Build configuration list for PBXNativeTarget "WeChatTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +476,7 @@
 				A68B365D1BEE48ED0055CADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68B365E1BEE48ED0055CADD /* Build configuration list for PBXNativeTarget "WeChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +485,7 @@
 				A68B36601BEE48ED0055CADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

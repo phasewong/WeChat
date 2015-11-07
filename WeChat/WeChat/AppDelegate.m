@@ -16,7 +16,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 创建窗口
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    // 设置窗口的根控制器
+    UITabBarController *VC = [[UITabBarController alloc]init];
+    VC.view.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = VC;
+    
+    // 显示窗口
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -8,6 +8,7 @@
 
 #import "PWTabBarController.h"
 #import "PWTabBar.h"
+#import "PWNavigationController.h"
 
 #define PWColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define PWColor(r, g, b) PWColorA((r), (g), (b), 255)
@@ -55,11 +56,17 @@
  */
 - (void)setupAllChildViewController{
     /**** 添加子控制器 ****/
-    [self setupOneChildViewController:[[UITableViewController alloc]init] image:@"tabbar_mainframe" selectedImage:@"tabbar_mainframeHL" title:@"微信"];
-    [self setupOneChildViewController:[[UIViewController alloc]init] image:@"tabbar_contacts" selectedImage:@"tabbar_contactsHL" title:@"通讯录"];
+//    [self setupOneChildViewController:[[PWNavigationController alloc]initWithRootViewController:[[UIViewController alloc]init]] image:@"tabbar_mainframe" selectedImage:@"tabbar_mainframeHL" title:@"微信"];
+//    [self setupOneChildViewController:[[PWNavigationController alloc]initWithRootViewController:[[UIViewController alloc]init]] image:@"tabbar_contacts" selectedImage:@"tabbar_contactsHL" title:@"通讯录"];
+//    
+//    [self setupOneChildViewController:[[PWNavigationController alloc]initWithRootViewController:[[UIViewController alloc]init]] image:@"tabbar_discover" selectedImage:@"tabbar_discoverHL" title:@"发现"];
+//    [self setupOneChildViewController:[[PWNavigationController alloc]initWithRootViewController:[[UIViewController alloc]init]] image:@"tabbar_me" selectedImage:@"tabbar_meHL" title:@"我"];
     
-    [self setupOneChildViewController:[[UITableViewController alloc]init] image:@"tabbar_discover" selectedImage:@"tabbar_discoverHL" title:@"发现"];
-    [self setupOneChildViewController:[[UIViewController alloc]init] image:@"tabbar_me" selectedImage:@"tabbar_meHL" title:@"我"];
+    [self setupOneChildViewController:[UIViewController class] image:@"tabbar_mainframe" selectedImage:@"tabbar_mainframeHL" title:@"微信"];
+    [self setupOneChildViewController:[UITableViewController class] image:@"tabbar_contacts" selectedImage:@"tabbar_contactsHL" title:@"通讯录"];
+    [self setupOneChildViewController:[UIViewController class] image:@"tabbar_discover" selectedImage:@"tabbar_discoverHL" title:@"发现"];
+    [self setupOneChildViewController:[UITableViewController class] image:@"tabbar_me" selectedImage:@"tabbar_meHL" title:@"我"];
+    
 }
 
 /**
@@ -70,14 +77,28 @@
  *  @param selectedImage tabBarItem选中图片
  *  @param title         tabBarItem文字
  */
-- (void)setupOneChildViewController:(UIViewController *)vc image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title{
+//- (void)setupOneChildViewController:(UIViewController *)vc image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title{
+//    vc.view.backgroundColor = PWRandomColor;
+//    if (image.length) { // 如果图片名有值才赋值
+//        vc.tabBarItem.title = title;
+//        vc.tabBarItem.image = [UIImage imageNamed:image];
+//        vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+//    }
+//    [self addChildViewController:vc];
+//}
+
+- (void)setupOneChildViewController:(Class )clazz image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title{
+    UIViewController *vc = [[clazz alloc]init];
     vc.view.backgroundColor = PWRandomColor;
     if (image.length) { // 如果图片名有值才赋值
         vc.tabBarItem.title = title;
         vc.tabBarItem.image = [UIImage imageNamed:image];
         vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     }
-    [self addChildViewController:vc];
+    PWNavigationController *nav = [[PWNavigationController alloc]initWithRootViewController:vc];
+    [self addChildViewController:nav];
 }
+
+
 
 @end

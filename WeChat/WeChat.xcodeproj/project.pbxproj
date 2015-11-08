@@ -14,6 +14,7 @@
 		A68B36541BEE48ED0055CADD /* WeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68B36531BEE48ED0055CADD /* WeChatUITests.m */; };
 		A6BC282F1BEEE35B0061EFAB /* PWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC282C1BEEE35B0061EFAB /* PWTabBar.m */; };
 		A6BC28301BEEE35B0061EFAB /* PWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC282E1BEEE35B0061EFAB /* PWTabBarController.m */; };
+		A6BC28331BEEE5F30061EFAB /* PWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BC28321BEEE5F30061EFAB /* PWNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		A6BC282C1BEEE35B0061EFAB /* PWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWTabBar.m; sourceTree = "<group>"; };
 		A6BC282D1BEEE35B0061EFAB /* PWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWTabBarController.h; sourceTree = "<group>"; };
 		A6BC282E1BEEE35B0061EFAB /* PWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWTabBarController.m; sourceTree = "<group>"; };
+		A6BC28311BEEE5F30061EFAB /* PWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNavigationController.h; sourceTree = "<group>"; };
+		A6BC28321BEEE5F30061EFAB /* PWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +103,14 @@
 		A68B362D1BEE48ED0055CADD /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				A6BC282B1BEEE35B0061EFAB /* PWTabBar.h */,
-				A6BC282C1BEEE35B0061EFAB /* PWTabBar.m */,
-				A6BC282D1BEEE35B0061EFAB /* PWTabBarController.h */,
-				A6BC282E1BEEE35B0061EFAB /* PWTabBarController.m */,
 				A68B36311BEE48ED0055CADD /* AppDelegate.h */,
 				A68B36321BEE48ED0055CADD /* AppDelegate.m */,
+				A6BC282D1BEEE35B0061EFAB /* PWTabBarController.h */,
+				A6BC282E1BEEE35B0061EFAB /* PWTabBarController.m */,
+				A6BC282B1BEEE35B0061EFAB /* PWTabBar.h */,
+				A6BC282C1BEEE35B0061EFAB /* PWTabBar.m */,
+				A6BC28311BEEE5F30061EFAB /* PWNavigationController.h */,
+				A6BC28321BEEE5F30061EFAB /* PWNavigationController.m */,
 				A68B363A1BEE48ED0055CADD /* Assets.xcassets */,
 				A68B363F1BEE48ED0055CADD /* Info.plist */,
 				A68B362E1BEE48ED0055CADD /* Supporting Files */,
@@ -272,6 +277,7 @@
 				A68B36301BEE48ED0055CADD /* main.m in Sources */,
 				A6BC28301BEEE35B0061EFAB /* PWTabBarController.m in Sources */,
 				A6BC282F1BEEE35B0061EFAB /* PWTabBar.m in Sources */,
+				A6BC28331BEEE5F30061EFAB /* PWNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
